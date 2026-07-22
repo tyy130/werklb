@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const weeklyHours = [
   { day: "Wednesday", short: "WED", time: "7PM—2AM", note: "The week clocks in." },
   { day: "Thursday", short: "THU", time: "7PM—2AM", note: "Warm up the floor." },
@@ -76,7 +78,7 @@ export default function Home() {
         </div>
 
         <div className="hero-visual">
-          <img
+          <Image
             src="/images/hero-heat.webp"
             alt="Portrait lit by a vivid red beam"
             width="896"
@@ -132,7 +134,7 @@ export default function Home() {
 
       <section className="manifesto" id="inside">
         <div className="manifesto-image">
-          <img
+          <Image
             src="/images/werk-future.webp"
             alt="Woman in futuristic black glasses under red light"
             width="896"
@@ -173,11 +175,11 @@ export default function Home() {
         </div>
         <div className="photo-grid">
           <figure className="photo-card photo-a">
-            <img src="/images/close-heat.webp" alt="Close portrait under warm club light" width="896" height="1344" loading="lazy" />
+            <Image src="/images/close-heat.webp" alt="Close portrait under warm club light" width="896" height="1344" loading="lazy" />
             <figcaption><span>01</span> Feel seen</figcaption>
           </figure>
           <figure className="photo-card photo-b">
-            <img src="/images/neon-werk.webp" alt="Man painted in vivid neon light" width="960" height="1200" loading="lazy" />
+            <Image src="/images/neon-werk.webp" alt="Man painted in vivid neon light" width="960" height="1200" loading="lazy" />
             <figcaption><span>02</span> Lose the light</figcaption>
           </figure>
           <div className="photo-callout">
